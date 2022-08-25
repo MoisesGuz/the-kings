@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+
+    background-image: url(../imagenes/corona\ 1.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.header img {
+    width: 250px;
+    padding: 15px;
+}
+
+header .navBar .listPrin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+
+header .navBar .listPrin .itemList a {
+
+    color: #16b839;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 20px;
+
+}
+
+header .navBar .listPrin .itemList a:hover {
+    color: #bcbe22;
+
+}
+
+main .banner {
+    width: 100%;
+}
+
+main .txtPrin {
+    text-align: center;
+}
+
+/* grid */
+.contenedorCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-image: url(../imagenes/background.jpg);
+
+}
+
+.contenedorCards .card {
+    width: 18rem;
+    height: 34rem;
+    padding: 1rem;
+    background-color: black;
+    border-radius: 30px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorCards .card .contImgCard .imgCard {
+    width: 100%;
+    height: 27rem;
+    border-radius: 5%;
+}
+
+.contenedorCards .card .contTxtCard .tituloCard,
+.precioCard {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contenedorCards .card .contBtnCard {
+    width: 100%;
+}
+
+.contenedorCards .card .contBtnCard .btnComprar {
+    font-family: monospace;
+    font-size: 22px;
+    font-weight: bolder;
+    color: aliceblue;
+    background-color: rgb(35, 192, 82);
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+footer {
+    color: #bcbe22;
+    background-color: rgb(26, 26, 26)
+}
+
+footer .listFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+main {
+    min-height: 80vh;
+}
+
+
+@media (max-width: 1170px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .contenedorCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header ul {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width: 694px) {
+    .contenedorCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
